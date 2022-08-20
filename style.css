@@ -283,16 +283,20 @@ body.mode .body-mod .fa-palette {
     width: 320px; 
           /* /////////////////////////////////////////////////////////////////////////////////*/
     inset: 0;
-    top: -80px;
-    max-height: 800px;
+    top: -90px;
+    /* bottom: -110px; */
+
+    /* max-height: 800px; */
     padding-top: 50px;
     z-index: 99;
     transition: .63s;
+    transform: translateX(-500px);
+
 }
 
 
 #section1.active .user-info {
-    transform: translateX(-500px);
+    transform: translateX(0px);
 
 }
 
@@ -569,8 +573,18 @@ body.mode .body-mod .fa-palette {
 @media (max-width: 800px) {
     #section1 .home-containt {
         flex-direction: column;
+        /* margin-left: 5%; */
 
     }
+
+    #section1  .img-page2 img{
+          margin-left: 38%;
+    }
+
+
+    /* #section1 .home-containt {
+        align-items: flex-start;
+    } */
 }
 
 @media (max-width: 500px) {
@@ -579,9 +593,47 @@ body.mode .body-mod .fa-palette {
         width: 55vw; 
         height: 55vw;
         margin-bottom: 30px;
-
     }
 
+    /* #section1 .home-containt {
+        justify-content: start;
+        align-items: flex-start;
+    } */
+
+}
+
+
+@media (max-width: 324px) {
+        #section1 .home-containt {
+        justify-content: start;
+        align-items: flex-start;
+        margin-left: 15%;
+    }
+}
+
+
+@media (max-width: 670px) {
+    #section1 .description .salutation {
+        font-size: 30px;
+    }
+    
+    #section1 .description .name {
+        font-size: 20px;
+        font-weight: bold;
+        color: red;
+
+    }
+    
+    #section1 .description .job {
+        font-size: 25px;
+    }
+
+    #section1 .description .hire-me {
+        height: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        width: 30%;
+    }
 }
 
 
@@ -707,6 +759,20 @@ body.mode .body-mod .fa-palette {
          font-size: 30px;
      }
  
+ }
+
+ @media (max-width: 600px) {
+    #section1 .description .name {
+        font-size: 27px;
+        font-weight: bold;
+    }
+ }
+
+ @media (max-width: 425px) {
+    #section1 .description .name {
+        font-size: 22px;
+        font-weight: bold;
+    }
  }
 
 
