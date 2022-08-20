@@ -264,18 +264,18 @@ console.log(window.innerWidth)
 
 if (window.innerWidth <= 1000) {
     console.log('you got it')
-    section1.classList.toggle('active')
+    // section1.classList.toggle('active')
     body.classList.toggle('active')
     document.querySelectorAll('ul li a').forEach(function (aa) {
          aa.addEventListener('click', function () {
             console.log('you juct clisc')
-            section1.classList.toggle('active')
-            body.classList.toggle('active')
+            section1.classList.toggle('active');
+            body.classList.toggle('active');
+            imgpage2.classList.toggle('active');
          })
     })
         
     }
-
 
 
 
